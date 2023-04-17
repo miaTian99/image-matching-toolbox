@@ -100,11 +100,10 @@ S(基于关联网络) --> U[SparseNCNet]
     # option2: 修改environment.yml
 	conda activate immatch
 	conda env update --file environment.yml --prune
->TODO：完善download和.gitmodules脚本，避免手动配置和完善环境
 
 ## 3.  项目测试和可视化
  **3.1 数据准备**
->理论上项目可以支持evaluation里面提及的全部公开数据集，但仅完成Hpatches数据集类型的测试脚本撰写以及测试。因此数据格式严格按照Hpatches进行整理，其中真值的获取可以根据data/matlab_gt文件夹下的代码实现手动标注。
+>理论上项目可以支持evaluation里面提及的全部公开数据集，但仅完成Hpatches数据集类型的测试脚本撰写以及测试。因此数据格式严格按照Hpatches进行整理，其中真值的获取可以根据data/matlab_gt文件夹下的代码实现手动标注
 
 **3.1.1 目录结构**
  * 匹配图像与待匹配图像放在一个文件夹下，数据集结构如下：
@@ -139,10 +138,10 @@ S(基于关联网络) --> U[SparseNCNet]
 **3.1.2 Matlab手工标定**
 * 打开同目录下的*labelingTools4Matching.m*，将*imgDirPath*改为要标定的数据集的根目录
 * 运行脚本，一组图像会陆续弹出若干个窗口，只需要在*Control Point Selection Tool*窗口内标点即可，一对图像最好标*10*对以上的匹配点（最少*4*对）
-* 标定完成后，会在每组图像目录下生成如**3.1.1**所示的TXT真值文件
+* 标定完成后，会在每组图像目录下生成如**3.1.1**所示的H_x_x.txt真值文件
 
  **3.2 输入输出格式**
-**3.2.1 输入格式规范（TODO：规范化测试脚本）**
+**3.2.1 输入格式规范**
  - 输入一组测试图像
 	 - 使用方法：修改并运行 text_single.sh, 指定调用test_1-pair.py并指定配置参数
 	 - 数据格式：存储图像所在的路径的csv文件、对应的原始图像 (目前可以是ppm、jpg、png)、调度接口json文件 (待开发)
@@ -200,9 +199,9 @@ S(基于关联网络) --> U[SparseNCNet]
 
 **3.4 可视化效果**
  - 单张测试：
- > TODO
+ > TODO：完善测试脚本text_single.sh和test_1-pair.py并测试
  - 多张测试：
- >TODO:
+ >TODO：完善测试脚本text_multi.sh和test_multi-pair.py并测试
  
 ## 4.  项目扩展和未开发模块
  **4.1 如何扩展新算法？**
