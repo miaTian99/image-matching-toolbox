@@ -1,0 +1,15 @@
+default: &default
+    class: 'DFM'
+    pretrained_ckpt: 'VGG19' # or VGG19_BN,加载torchvision模型,命名与ckpt区分开来
+    match_threshold: 0.0
+    enable_two_stage: True
+    bidirectional: True
+    display_results: False
+    imsize: -1
+example:
+    <<: *default
+    display_results: False
+    imsize: 1024
+hpatch:
+    <<: *default
+    imsize: -1

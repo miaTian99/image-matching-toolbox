@@ -1,0 +1,17 @@
+name: immatch
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - cudatoolkit=11.0
+  - python=3.7
+  - pytorch==1.7.0
+  - torchvision==0.8.0
+  - jupyter
+  - scipy
+  - matplotlib
+  - opencv==3.4.2.17 # pip-保证同时支持SURF和SIFT
+  - opencv-contrib==3.4.2.17 # pip-保证同时支持SURF和SIFT
+  - kornia==0.5.8 # pip-建议手动下载，自动可能覆盖pytorch-gpu为cpu
+  - kornia-moons==0.2.0 # pip-建议手动下载，自动可能覆盖pytorch-gpu为cpu
