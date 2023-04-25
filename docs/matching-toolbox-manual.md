@@ -69,7 +69,8 @@ S(基于关联网络) --> U[SparseNCNet]
     bash download.sh
     
 **2.2.3 虚拟环境配置和安装**
-	Ⅰ. 创建虚拟环境
+
+    Ⅰ. 创建虚拟环境
 	
     # RTX_4090
     conda env create -f environment.yml
