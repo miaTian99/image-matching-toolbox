@@ -1,5 +1,5 @@
 # Manually added ignores
-# outputs/
+outputs/
 !data/matlab_gt/
 data/
 pretrained/
