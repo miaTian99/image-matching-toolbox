@@ -11,7 +11,28 @@ dependencies:
   - jupyter
   - scipy
   - matplotlib
-  - opencv==3.4.2.17 # pip-保证同时支持SURF和SIFT
-  - opencv-contrib==3.4.2.17 # pip-保证同时支持SURF和SIFT
-  - kornia==0.5.8 # pip-建议手动下载，自动可能覆盖pytorch-gpu为cpu
-  - kornia-moons==0.2.0 # pip-建议手动下载，自动可能覆盖pytorch-gpu为cpu
+  - pyyaml
+  - pillow
+  - pip
+  - pip:
+      - opencv-python==3.4.2.17 # pip-保证同时支持SURF和SIFT
+      - opencv-contrib-python==3.4.2.17 # pip-保证同时支持SURF和SIFT
+      - kornia==0.5.8
+      - kornia-moons==0.2.0 
+      - dataclasses==0.6
+      - einops==0.6.0
+      - filelock==3.9.0
+      - freetype-py==2.3.0
+      - future==0.18.3
+      - gdown==4.6.4
+      - glfw==2.5.6
+      - h5py==3.8.0
+      - hsluv==5.0.3
+      - numexpr==2.8.4
+      - pycolmap==0.3.0
+      - pydegensac==0.1.2
+      - tables==3.7.0
+      - tqdm==4.65.0
+      - transforms3d==0.4.1
+      - vispy==0.12.1
+      - yacs==0.1.8

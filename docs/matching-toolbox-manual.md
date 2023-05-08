@@ -69,14 +69,15 @@ S(基于关联网络) --> U[SparseNCNet]
     bash download.sh
     
 **2.2.3 虚拟环境配置和安装**
-    Ⅰ. 创建虚拟环境
-	
+
+  Ⅰ. 创建虚拟环境
+
     # RTX_4090
     conda env create -f environment.yml
     # other hardware
     conda env create -n immatch python=3.7
     conda activate immatch
-   Ⅱ. 安装代码库及其依赖
+  Ⅱ. 安装代码库及其依赖
 
     # 下载immatch toolbox(作为python package)
     # 注意: 下载同时支持surf和sift的opencv版本及其对应opencv-contrib的版本
@@ -92,7 +93,7 @@ S(基于关联网络) --> U[SparseNCNet]
     pip install git+https://github.com/mihaidusmanu/pycolmap
     # 或者直接
     pip install pycolmap
-   Ⅴ. 更新immatch (optional)
+  Ⅴ. 更新immatch (optional)
     
     # option1: 直接修改setup.py并重新更新匹配代码库
     cd image-matching-toolbox/
@@ -199,7 +200,10 @@ S(基于关联网络) --> U[SparseNCNet]
 
 **3.4 可视化效果**
  - 单张测试：
- > TODO：完善测试脚本text_single.sh和test_1-pair.py并测试
+ 	 ```
+	python visualize_single-pair.py --meth  'superglue' 
+	```		    
+ > TODO：完善测试脚本text_single.sh和visualize_single-pair.py的功能
  - 多张测试：
  >TODO：完善测试脚本text_multi.sh和test_multi-pair.py并测试
  
