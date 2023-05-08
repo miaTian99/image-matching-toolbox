@@ -1,7 +1,7 @@
 # Manually added ignores
 # outputs/
 !data/matlab_gt/
-# data/
+data/
 pretrained/
 !pretrained/download.sh
 
